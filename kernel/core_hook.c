@@ -1127,7 +1127,7 @@ out_ksu_try_umount:
 	ksu_try_umount("/sbin", false, MNT_DETACH);
 
 	// try umount hosts file
-	ksu_try_umount("/system/etc/hosts", false, MNT_DETACH);
+	ksu_ry_umount("/system/etc/hosts", false, MNT_DETACH);
 
 	// try umount lsposed dex2oat bins
 	ksu_try_umount("/apex/com.android.art/bin/dex2oat64", false, MNT_DETACH);
